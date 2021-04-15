@@ -1,0 +1,41 @@
+{
+    "map": {
+        "name": "map_north",
+        "width": 1000,
+        "title": "North Campus"
+    },
+    "buildings": [
+        {
+            "name": "mason",
+            "x": 1395,
+            "y": 1610,
+            "width": 400,
+            "height": 370,
+            "hitboxes": [
+                {
+                    "x": 1395,
+                    "y": 1610,
+                    "width": 400,
+                    "height": 370
+                }
+            ]
+        }
+    ],
+    "interactions": [
+        {
+            "x": 1535,
+            "y": 1750,
+            "radius": 400,
+            "popup": {
+                "name": "mason",
+                "title": "The Hatcher Graduate Library",
+                "description": "The Hatcher Library is a library open to all students that is known for 'The Stacks'. The Stacks are where multiple levels of books are packed in, and students have been known to easily get lost in them. Don't forget to follow the yellow line!"
+            }
+        }
+    ],
+    "busStop": {
+        "to": "diag",
+        "x": 150,
+        "y": 2850
+    }
+}

@@ -1,0 +1,27 @@
+body{
+    background-color: bisque;
+}
+
+.splashScreen{
+    position: absolute;
+    width: auto;
+    font-size: larger;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.splashScreen button:not(:hover) {
+    background: white;
+}
+
+.howToPlay{
+    position: relative;
+    left:-5%;
+    margin-top: 75px;
+}
+
+.gamePlay{
+    position: relative;
+    left: 10%;
+}

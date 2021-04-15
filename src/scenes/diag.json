@@ -1,0 +1,382 @@
+{
+    "map": {
+        "name": "map_extended_diag",
+        "width": 4000,
+        "title": "The Diag"
+    },
+    "buildings": [
+        {
+            "name": "hatcher",
+            "x": 1395,
+            "y": 1610,
+            "width": 400,
+            "height": 370,
+            "hitboxes": [
+                {
+                    "x": 1395,
+                    "y": 1610,
+                    "width": 400,
+                    "height": 370
+                }
+            ]
+        },
+        {
+            "name": "tappanhall",
+            "x": 810,
+            "y": 2360,
+            "width": 200,
+            "height": 400,
+            "hitboxes": [
+                {
+                    "x": 810,
+                    "y": 2360,
+                    "width": 200,
+                    "height": 400
+                }
+            ]
+        },
+        {
+            "name": "ugli",
+            "x": 2060,
+            "y": 2160,
+            "width": 350,
+            "height": 550,
+            "hitboxes": [
+                {
+                    "x": 2060,
+                    "y": 2160,
+                    "width": 350,
+                    "height": 550
+                }
+            ]
+        },
+        {
+            "name": "artmuseum",
+            "x": 340,
+            "y": 2220,
+            "width": 500,
+            "height": 520,
+            "hitboxes": [
+                {
+                    "x": 340,
+                    "y": 2220,
+                    "width": 500,
+                    "height": 520
+                }
+            ]
+        },
+        {
+            "name": "chem",
+            "x": 1790,
+            "y": 100,
+            "width": 1100,
+            "height": 580,
+            "hitboxes": [
+                {
+                    "x": 1790,
+                    "y": 100,
+                    "width": 1100,
+                    "height": 580
+                }
+            ]
+        },
+        {
+            "name": "environmental",
+            "x": 2380,
+            "y": 830,
+            "width": 410,
+            "height": 325,
+            "hitboxes": [
+                {
+                    "x": 2380,
+                    "y": 830,
+                    "width": 410,
+                    "height": 325
+                }
+            ]
+        },
+        {
+            "name": "mason",
+            "x": 310,
+            "y": 980,
+            "width": 690,
+            "height": 1010,
+            "hitboxes": [
+                {
+                    "x": 310,
+                    "y": 980,
+                    "width": 690,
+                    "height": 1010
+                }
+            ]
+        },
+        {
+            "name": "presidenthouse",
+            "x": 1170,
+            "y": 2500,
+            "width": 280,
+            "height": 255,
+            "hitboxes": [
+                {
+                    "x": 1170,
+                    "y": 2500,
+                    "width": 280,
+                    "height": 255
+                }
+            ]
+        },
+        {
+            "name": "williamlibrary",
+            "x": 1590,
+            "y": 2500,
+            "width": 250,
+            "height": 175,
+            "hitboxes": [
+                {
+                    "x": 1590,
+                    "y": 2500,
+                    "width": 250,
+                    "height": 175
+                }
+            ]
+        },
+        {
+            "name": "oldKines",
+            "x": 850,
+            "y": 150,
+            "width": 540,
+            "height": 530,
+            "hitboxes": [
+                {
+                    "x": 850,
+                    "y": 150,
+                    "width": 540,
+                    "height": 530
+                }
+            ]
+        },
+        {
+            "name": "westhall",
+            "x": 2380,
+            "y": 1310,
+            "width": 560,
+            "height": 650,
+            "hitboxes": [
+                {
+                    "x": 2380,
+                    "y": 1735,
+                    "width": 520,
+                    "height": 295
+                },
+                {
+                    "x": 2380,
+                    "y": 1340,
+                    "width": 117,
+                    "height": 478
+                },
+                {
+                    "x": 2755,
+                    "y": 1310,
+                    "width": 108,
+                    "height": 302
+                },
+                {
+                    "x": 2500,
+                    "y": 1475,
+                    "width": 300,
+                    "height": 137
+                },
+                {
+                    "x": 2588,
+                    "y": 2038,
+                    "width": 300,
+                    "height": 237
+                },
+                {
+                    "x": 2745,
+                    "y": 2278,
+                    "width": 143,
+                    "height": 300
+                },
+                {
+                    "x": 2435,
+                    "y": 2582,
+                    "width": 500,
+                    "height": 175
+                }
+            ]
+        },
+        {
+            "name": "1100north",
+            "x": 3150,
+            "y": 600,
+            "width": 500,
+            "height": 400,
+            "hitboxes": [
+                {
+                    "x": 3150,
+                    "y": 600,
+                    "width": 500,
+                    "height": 400
+                }
+            ]
+        }
+    ],
+    "interactions": [
+        {
+            "x": 1535,
+            "y": 1750,
+            "radius": 400,
+            "popup": {
+                "name": "hatcher",
+                "title": "The Hatcher Graduate Library",
+                "description": "The Hatcher Library is a library open to all students that is known for 'The Stacks'. The Stacks are where multiple levels of books are packed in, and students have been known to easily get lost in them. Don't forget to follow the yellow line!"
+            }
+        },
+        {
+            "x": 865,
+            "y": 2460,
+            "radius": 300,
+            "popup": {
+                "name": "tappan",
+                "title": "Tappan Hall",
+                "description": "Tappan hall is home to the Fine arts library, Career Resource Center, and a graduate study room. In the fall, has has colorful vines that hang from the side. It is a must see!"
+            }
+        },
+        {
+            "x": 440,
+            "y": 2570,
+            "radius": 300,
+            "popup": {
+                "name": "artm",
+                "title": "Museum of Art",
+                "description": "Also known as the UMMA, this museum has a lot of different collections of art. This includes exhibits of African Art, Asian Art, Modern / Contemporary Art, and Western art, along with changing exhibits! "
+            }
+        },
+        {
+            "x": 1270,
+            "y": 2640,
+            "radius": 250,
+            "popup": {
+                "name": "president",
+                "title": "President's House",
+                "description": "This is the president of the universities household and it is also one of the oldest buildings on campus. Sometimes there are events held here, like ice cream socials with the president! "
+            }
+        },
+        {
+            "x": 2170,
+            "y": 2270,
+            "radius": 300,
+            "popup": {
+                "name": "Ugli",
+                "title": "Undergraduate Library (UgLi)",
+                "description": "This is a common study place for all! The UgLi is a library with a cafe, computer areas, individual and common study spaces, and you can even rent/buy books for classes here!"
+            }
+        },
+        {
+            "x": 2530,
+            "y": 940,
+            "radius": 300,
+            "popup": {
+                "name": "dana",
+                "title": "Dana building / Environmental building",
+                "description": "Also known as the School for Environment and Sustainability. There are classes held here and research being conducted on making the university more sustainable."
+            }
+        },
+        {
+            "x": 2575,
+            "y": 520,
+            "radius": 420,
+            "popup": {
+                "name": "chem",
+                "title": "Chemistry building",
+                "description": "This is where most Chemistry lectures and labs take place. The inside has a glass ceiling with trees inside the building!"
+            }
+        },
+        {
+            "x": 1660,
+            "y": 2550,
+            "radius": 200,
+            "popup": {
+                "name": "will",
+                "title": "William's Library",
+                "description": "The William L. Clements Library collects, preserves, and makes available historical resources about Americas in the 18th and 19th centry. "
+            }
+        },
+        {
+            "x": 870,
+            "y": 1050,
+            "radius": 250,
+            "popup": {
+                "name": "mason",
+                "title": "Mason Hall",
+                "description": "This building is split into 4 different halls, with Mason being one almost every freshman have a class in. Mason holds many Math and English sections in classrooms that oversee the diag."
+            }
+        },
+        {
+            "x": 410,
+            "y": 1410,
+            "radius": 250,
+            "popup": {
+                "name": "angel",
+                "title": "Angell & Haven Hall",
+                "description": "Angel Hall has the CSP lounge and Advising office, along with offices of a lot of Humanitiy professors."
+            }
+        },
+        {
+            "x": 870,
+            "y": 1800,
+            "radius": 250,
+            "popup": {
+                "name": "tisch",
+                "title": "Tisch Hall",
+                "description": "Tisch hall has a few major lecture halls that seat a few hunderd for multiple different classes."
+            }
+        },
+        {
+            "x": 1200,
+            "y": 500,
+            "radius": 250,
+            "popup": {
+                "name": "oldkine",
+                "title": "UNDERCONSTRUCTION: Old Kinesology",
+                "description": "This building has been under construction for 3-4 years and is going to be turned into a new building for Kinesology students."
+            }
+        },
+        {
+            "x": 2400,
+            "y": 1640,
+            "radius": 250,
+            "popup": {
+                "name": "randal",
+                "title": "Randal Laboratories",
+                "description": "This is where a lot of the physics labs happen. This building also is home to an X-ray research lab, Waves heat and light lab, and a Liquid Nitrogen room. But don't expect to just walk into a room of liquid nitrogen while exploring!"
+            }
+        },
+        {
+            "x": 2450,
+            "y": 2610,
+            "radius": 250,
+            "popup": {
+                "name": "westhall",
+                "title": "West Hall",
+                "description": "This hall is connected to Randal Labs, and has computing sites and a Marine Hydornamics lab inside. It is rumored that if you kiss someone under the West Hall arch you are bound to get married!"
+            }
+        },
+        {
+            "x": 3150,
+            "y": 620,
+            "radius": 250,
+            "popup": {
+                "name": "cctc",
+                "title": "Central Campus Transit Center",
+                "description": "This building is next to the main campus bus stop, so people often refer to it when taking the bus. It has many rooms inside, including labs and research centers."
+            }
+        }
+    ],
+    "busStop": {
+        "to": "north",
+        "x": 3300,
+        "y": 400
+    }
+}

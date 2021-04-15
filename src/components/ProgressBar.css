@@ -1,0 +1,36 @@
+#progressbar {
+    bottom: 20px;
+    left: 65px;
+}
+.yeartext {
+    bottom: 50px;
+    left: 80px;
+    width: 120px;
+    color:linen;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px;
+}
+.backgroundbar {
+    bottom: 20px;
+    left: 65px;
+    height: 23px;
+    width: 150px;
+    background-color: #343434;
+    border-radius: 60px;
+    padding: 0px;
+}
+.percentbar {
+    height: 100%;
+    background-color:rgb(60, 67, 167);
+    border-radius: 60px;
+    text-align: right;
+    transition: width 1s;
+    transition-timing-function: ease-in-out;
+}
+.percenttext{
+    bottom: 18px;
+    padding: 7px;
+    color:linen;
+}
