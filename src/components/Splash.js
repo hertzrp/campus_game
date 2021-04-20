@@ -1,5 +1,6 @@
 import './Splash.css'
 import React from "react";
+import icon from "../assets/m.svg"
 
 class Splash extends React.Component {
     // constructor(props){
@@ -41,21 +42,34 @@ class Splash extends React.Component {
         return <div className="splashScreen">
             <div className="title">
                 <center><h1>The University Of Michigan</h1></center>
-                <center><h2>Campus Tour</h2></center>
+                <center><h2>BlueView Virtual Campus</h2></center>
             </div>
             
             <div className="howToPlay">
                 <h2>How to Play:</h2>
                 <div className="gamePlay">
                     <h3>Movement:</h3>
-                    <p className="description">
+                    <ul>
+                        <p>
                         Using the directional arrows on your keyboard you can move your character around. 
-                    </p>
+                        </p>
+                        <div className="bus"><p>To travel between campus locations find the bus stop and click on the <img src={icon} alt="bus-stop"></img> icon.</p></div>
+                    </ul>
                     <h3>Objective:</h3>
-                    <p className="description">
-                        Explore around campus by searching for new buildings that you have yet to discover.
-                        As you locate new buildings you will grow your XP bar indicating your progress.
-                    </p>
+                    <ul>
+                        <p>
+                            Explore around campus by searching for new buildings that you have yet to discover.
+                        </p>
+                        <p>
+                            Locate and learn about new buildings by clicking on that building's icon to grow your progress.
+                        </p>
+                        <p>
+                            As you gain XP you will move from a Freshman to a Senior and finally Graduate at 100%.
+                        </p>
+                        <p>
+                            To track your progress click the list icon in the top right corner.
+                        </p>
+                    </ul>
                 </div>
             </div>
             <br></br>

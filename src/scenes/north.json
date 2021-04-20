@@ -1,35 +1,455 @@
 {
     "map": {
         "name": "map_north",
-        "width": 1000,
-        "title": "North Campus"
+        "title": "North Campus",
+        "width": 3700,
+        "height": 3060
     },
     "buildings": [
         {
-            "name": "mason",
-            "x": 1395,
-            "y": 1610,
-            "width": 400,
-            "height": 370,
+            "name": "pierpont",
+            "x": 500,
+            "y": 2125,
+            "width": 500,
             "hitboxes": [
                 {
-                    "x": 1395,
-                    "y": 1610,
-                    "width": 400,
-                    "height": 370
+                    "x": 600,
+                    "y": 2125,
+                    "width": 355,
+                    "height": 330
+                },
+                {
+                    "x": 500,
+                    "y": 2390,
+                    "width": 100,
+                    "height": 100
+                }
+            ]
+        },
+        {
+            "name": "pierpontfood",
+            "x": 350,
+            "y": 2500,
+            "width": 400,
+            "hitboxes": [
+                {
+                    "x": 350,
+                    "y": 2580,
+                    "width": 370,
+                    "height": 240
+                },
+                {
+                    "x": 425,
+                    "y": 2500,
+                    "width": 220,
+                    "height": 385
+                }
+            ]
+        },
+        {
+            "name": "dude",
+            "x": 1000,
+            "y": 2100,
+            "width": 1160,
+            "hitboxes": [ 
+                {
+                    "x": 1000,
+                    "y": 2350,
+                    "width": 500,
+                    "height": 180
+                },
+                {
+                    "x": 1475,
+                    "y": 2100,
+                    "width": 660,
+                    "height": 670
+                }
+            ]
+        },
+        {
+            "name": "chrysler",
+            "x": 1000,
+            "y": 2550,
+            "width": 300,
+            "hitboxes": [
+                {
+                    "x": 1000,
+                    "y": 2550,
+                    "width": 270,
+                    "height": 400
+                }
+            ]
+        },
+        {
+            "name": "miller",
+            "x": 200,
+            "y": 1500,
+            "width": 900,
+            "hitboxes": [
+                {
+                    "x": 230,
+                    "y": 1590,
+                    "width": 840,
+                    "height": 190
+                },
+                {
+                    "x": 205,
+                    "y": 1760,
+                    "width": 240,
+                    "height": 170
+                },
+                {
+                    "x": 930,
+                    "y": 1500,
+                    "width": 120,
+                    "height": 150
+                }
+            ]
+        },
+        {
+            "name": "belltower",
+            "x": 1450,
+            "y": 1650,
+            "width": 150,
+            "hitboxes": [
+                {
+                    "x": 1455,
+                    "y": 1650,
+                    "width": 120,
+                    "height": 140
+                }
+            ]
+        },
+        {
+            "name": "nuclear",
+            "x": 2250,
+            "y": 2250,
+            "width": 300,
+            "hitboxes": [ 
+                {
+                    "x": 2260,
+                    "y": 2740,
+                    "width": 85,
+                    "height": 275
+                },
+                {
+                    "x": 2370,
+                    "y": 2250,
+                    "width": 140,
+                    "height": 615
+                }
+            ]
+        },
+        {
+            "name": "mortimer",
+            "x": 2800,
+            "y": 2800,
+            "width": 550,
+            "hitboxes": [
+                 {
+                    "x": 2820,
+                    "y": 2870,
+                    "width": 495,
+                    "height": 105
+                 },
+                 {
+                    "x": 3100,
+                    "y": 2820,
+                    "width": 55,
+                    "height": 50
+                 },
+                 {
+                    "x": 2870,
+                    "y": 2990,
+                    "width": 15,
+                    "height": 70
+                 }
+            ]
+        },
+        {
+            "name": "ioe",
+            "x": 2850,
+            "y": 2350,
+            "width": 450,
+            "hitboxes": [
+                {
+                    "x": 2860,
+                    "y": 2490,
+                    "width": 410,
+                    "height": 165
+                },
+                {
+                    "x": 2850,
+                    "y": 2380,
+                    "width": 225,
+                    "height": 165
+                }
+            ]
+        },
+        {
+            "name": "beal",
+            "x": 2700,
+            "y": 1950,
+            "width": 500,
+            "hitboxes": [
+                {
+                    "x": 2715,
+                    "y": 1950,
+                    "width": 450,
+                    "height": 180
+                },
+                {
+                    "x": 3100,
+                    "y": 2150,
+                    "width": 60,
+                    "height": 80
+                }
+            ]
+        },
+        {
+            "name": "bbbdow",
+            "x": 1205,
+            "y": 495,
+            "width": 1085,
+            "hitboxes": [
+                {
+                    "x": 1210,
+                    "y": 505,
+                    "width": 78,
+                    "height": 640
+                },
+                {
+                    "x": 1210,
+                    "y": 660,
+                    "width": 290,
+                    "height": 490
+                },
+                {
+                    "x": 1472,
+                    "y": 494,
+                    "width": 73,
+                    "height": 212
+                },
+                {
+                    "x": 1470,
+                    "y": 925,
+                    "width": 300,
+                    "height": 108
+                },
+                {
+                    "x": 1740,
+                    "y": 510,
+                    "width": 525,
+                    "height": 635
+                },
+                {
+                    "x": 1680,
+                    "y": 955,
+                    "width": 525,
+                    "height": 200
+                }
+            ]
+        },
+        {
+            "name": "ggbrown",
+            "x": 2290,
+            "y": 170,
+            "width": 1250,
+            "hitboxes": [
+                {
+                    "x": 2280,
+                    "y": 518,
+                    "width": 1225,
+                    "height": 168
+                },
+                {
+                    "x": 2440,
+                    "y": 283,
+                    "width": 405,
+                    "height": 300
+                },
+                {
+                    "x": 3330,
+                    "y": 178,
+                    "width": 183,
+                    "height": 630
+                },
+                {
+                    "x": 2465,
+                    "y": 680,
+                    "width": 618,
+                    "height": 625
+                },
+                {
+                    "x": 3125,
+                    "y": 800,
+                    "width": 232,
+                    "height": 280
+                },
+                {
+                    "x": 3100,
+                    "y": 462,
+                    "width": 20,
+                    "height": 25
+                }
+            ]
+        },
+        {
+            "name": "ece",
+            "x": 2390,
+            "y": 795,
+            "width": 1250,
+            "hitboxes": [
+                {
+                    "x": 2385,
+                    "y": 1170,
+                    "width": 200,
+                    "height": 82
+                },
+                {
+                    "x": 3080,
+                    "y": 1220,
+                    "width": 535,
+                    "height": 310
+                },
+                {
+                    "x": 2415,
+                    "y": 1260,
+                    "width": 1026,
+                    "height": 610
                 }
             ]
         }
     ],
     "interactions": [
         {
-            "x": 1535,
-            "y": 1750,
+            "x": 400,
+            "y": 2300,
             "radius": 400,
             "popup": {
-                "name": "mason",
-                "title": "The Hatcher Graduate Library",
-                "description": "The Hatcher Library is a library open to all students that is known for 'The Stacks'. The Stacks are where multiple levels of books are packed in, and students have been known to easily get lost in them. Don't forget to follow the yellow line!"
+                "name": "pierpont",
+                "title": "Pierpont Commons",
+                "description": "Pierpont Commons is the University of Michigan’s North Campus student union. Cheerfully bedecked with international flags and nestled near the woods of North Campus, Pierpont invites you to visit its shops, services, restaurants and large study spaces."
+            }
+        },
+        {
+            "x": 600,
+            "y": 1650,
+            "radius": 200,
+            "popup": {
+                "name": "miller",
+                "title": "Arthur Miller Theatre",
+                "description": "Expressed as a translucent glass cube levitating above a multi-hued masonry base, the Arthur Miller Theatre transforms into a luminous glass beacon at night, recalling the illuminated marquees of vaudeville era theatres."
+            }
+        },
+        {
+            "x": 1650,
+            "y": 2300,
+            "radius": 500,
+            "popup": {
+                "name": "dude",
+                "title": "Duderstadt Center",
+                "description": "The James and Anne Duderstadt Center, formerly known as the Media Union, opened in 1996 as a special place to provide faculty and students with the tools and collaborative space for creating the future."
+            }
+        },
+        {
+            "x": 1480,
+            "y": 1680,
+            "radius": 200,
+            "popup": {
+                "name": "belltower",
+                "title": "Lurie Bell Tower",
+                "description": "The Lurie Bell Tower houses a 60-bell grand carillon, one of the university's two grand carillons; the other is housed in Burton Tower on Central Campus. These are two of only 23 grand carillons in the world. It also is designed to have no 90 degree angles!"
+            }
+        },
+        {
+            "x": 2425,
+            "y": 2500,
+            "radius": 300,
+            "popup": {
+                "name": "nuclear",
+                "title": "Nuclear Engineering Labratories",
+                "description": "This lab is home to many different research areas, including Fission and Radiation Transport, Materials, Radiation Measurements and Imaging, and Plasmas and Nuclear Fusion."
+            }
+        },
+        {
+            "x": 3000,
+            "y": 2000,
+            "radius": 300,
+            "popup": {
+                "name": "beal",
+                "title": "Lurie Engineering Center",
+                "description": "This building is home to administration offices, student spaces, faculty lounges, molecular biotechnologies laboratories,and conference rooms."
+            }
+        },
+        {
+            "x": 2950,
+            "y": 2500,
+            "radius": 300,
+            "popup": {
+                "name": "ioe",
+                "title": "Industrial & Operations Engineering Building",
+                "description": "This building has a lot of classroom and is home to IOE classes and also holds research and laboratories related to IOE."
+            }
+        },
+        {
+            "x": 3100,
+            "y": 2850,
+            "radius": 300,
+            "popup": {
+                "name": "mortimer",
+                "title": "Mortimer E. Cooley Building",
+                "description": "This was the first building ever built on North Campus. It was named in honor of Michigan's Engineering's longest serving dean Mortimer Elwyn Cooley who helped establish the Engineering Research institute."
+            }
+        },
+        {
+            "x": 1450,
+            "y": 1000,
+            "radius": 300,
+            "popup": {
+                "name": "bbb",
+                "title": "Bob and Betty Beyster Building",
+                "description": "This is home of computer science and engineering (CSE) and hosts many events throughout the school year. It has many CSE advisors and professors office's here, and in the atrium lives the first electronic general purpose computer built by Arthur Burks."
+            } 
+        },
+        {
+            "x": 1850,
+            "y": 1000,
+            "radius": 300,
+            "popup": {
+                "name": "dow",
+                "title": "Dow Engineering Building",
+                "description": "This building host many engineering classes, and you might have some exams here!"
+            }
+        },
+        {
+            "x": 2600,
+            "y": 400,
+            "radius": 300,
+            "popup": {
+                "name": "ggbrown",
+                "title": "G.G. Brown Laboratory",
+                "description": "This building is a newer add on, and it was built with a giant LED wall on the outside that shows abstract samples of active lab work. "
+            }
+        },
+        {
+            "x": 2470,
+            "y": 1350,
+            "radius": 300,
+            "popup": {
+                "name": "eecs",
+                "title": "Electrical & Computer Engineering",
+                "description": "Inside this building, you will find a big atrium that holds a lot of experiments going on. It is also home to software and electronics research labs."
+            }
+        },
+        {
+            "x": 3200,
+            "y": 1750,
+            "radius": 300,
+            "popup": {
+                "name": "walter",
+                "title": "Walter E. Lay Automotive Engineering Laboratory",
+                "description": "This building holds many automotive related laboratories, including Diesel Engine research, Mechatronics, Low Engine Friction Research, Powertrain Control, and many others."
             }
         }
     ],

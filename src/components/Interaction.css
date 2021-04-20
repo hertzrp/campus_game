@@ -10,6 +10,10 @@
     transition: .2s;
 }
 
+.interaction-icon:hover {
+    filter: brightness(0.9);
+}
+
 .interaction-icon.active {
     visibility: visible;
     transform: scale(1);

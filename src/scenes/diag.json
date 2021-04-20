@@ -1,8 +1,9 @@
 {
     "map": {
         "name": "map_extended_diag",
-        "width": 4000,
-        "title": "The Diag"
+        "title": "The Diag",
+        "width": 3700,
+        "height": 2950
     },
     "buildings": [
         {
@@ -15,8 +16,8 @@
                 {
                     "x": 1395,
                     "y": 1610,
-                    "width": 400,
-                    "height": 370
+                    "width": 370,
+                    "height": 360
                 }
             ]
         },
@@ -45,8 +46,20 @@
                 {
                     "x": 2060,
                     "y": 2160,
-                    "width": 350,
+                    "width": 220,
                     "height": 550
+                },
+                {
+                    "x": 2280,
+                    "y": 2250,
+                    "width": 40,
+                    "height": 450
+                },
+                {
+                    "x": 2320,
+                    "y": 2250,
+                    "width": 50,
+                    "height": 420
                 }
             ]
         },
@@ -60,8 +73,20 @@
                 {
                     "x": 340,
                     "y": 2220,
-                    "width": 500,
-                    "height": 520
+                    "width": 470,
+                    "height": 120
+                },
+                {
+                    "x": 500,
+                    "y": 2220,
+                    "width": 140,
+                    "height": 270
+                },
+                {
+                    "x": 340,
+                    "y": 2510,
+                    "width": 370,
+                    "height": 240
                 }
             ]
         },
@@ -103,9 +128,9 @@
             "height": 1010,
             "hitboxes": [
                 {
-                    "x": 310,
+                    "x": 370,
                     "y": 980,
-                    "width": 690,
+                    "width": 600,
                     "height": 1010
                 }
             ]
@@ -150,8 +175,32 @@
                 {
                     "x": 850,
                     "y": 150,
-                    "width": 540,
-                    "height": 530
+                    "width": 510,
+                    "height": 340
+                },
+                {
+                    "x": 950,
+                    "y": 150,
+                    "width": 100,
+                    "height": 400
+                },
+                {
+                    "x": 1050,
+                    "y": 150,
+                    "width": 100,
+                    "height": 450
+                },
+                {
+                    "x": 1150,
+                    "y": 150,
+                    "width": 100,
+                    "height": 500
+                },
+                {
+                    "x": 1250,
+                    "y": 150,
+                    "width": 110,
+                    "height": 560
                 }
             ]
         },
@@ -215,9 +264,84 @@
             "hitboxes": [
                 {
                     "x": 3150,
+                    "y": 1010,
+                    "width": 470,
+                    "height": 360
+                },
+                {
+                    "x": 3150,
                     "y": 600,
-                    "width": 500,
-                    "height": 400
+                    "width": 100,
+                    "height": 360
+                },
+                {
+                    "x": 3200,
+                    "y": 650,
+                    "width": 100,
+                    "height": 360
+                },
+                {
+                    "x": 3300,
+                    "y": 700,
+                    "width": 80,
+                    "height": 360
+                },
+                {
+                    "x": 3400,
+                    "y": 800,
+                    "width": 80,
+                    "height": 360
+                },
+                {
+                    "x": 3500,
+                    "y": 900,
+                    "width": 80,
+                    "height": 360
+                }
+            ]
+        },
+        {
+            "name": "easthall",
+            "x": 3160,
+            "y": 2000,
+            "width": 550,
+            "height": 530,
+            "hitboxes": [
+                {
+                    "x": 3180,
+                    "y": 2000,
+                    "width": 520,
+                    "height": 780
+                }
+            ]
+        },
+        {
+            "name": "centerofjap",
+            "x": 3450,
+            "y": 1600,
+            "width": 180,
+            "height": 530,
+            "hitboxes": [
+                {
+                    "x": 3450,
+                    "y": 1600,
+                    "width": 160,
+                    "height": 310
+                }
+            ]
+        },
+        {
+            "name": "wieser",
+            "x": 3160,
+            "y": 1400,
+            "width": 400,
+            "height": 530,
+            "hitboxes": [
+                {
+                    "x": 3166,
+                    "y": 1440,
+                    "width": 343,
+                    "height": 105
                 }
             ]
         }
@@ -338,9 +462,9 @@
             "y": 500,
             "radius": 250,
             "popup": {
-                "name": "oldkine",
-                "title": "UNDERCONSTRUCTION: Old Kinesology",
-                "description": "This building has been under construction for 3-4 years and is going to be turned into a new building for Kinesology students."
+                "name": "kines",
+                "title": "Kinesology Building",
+                "description": "This building has been under construction for 3-4 years and was just opened up for lectures and students."
             }
         },
         {
@@ -364,13 +488,63 @@
             }
         },
         {
+            "x": 3400,
+            "y": 550,
+            "radius": 150,
+            "popup": {
+                "name": "cctc",
+                "title": "Central Campus Transit Center",
+                "description": "The CCTC is a student-dense location, as it connects all of the UM bus stops around Ann Arbor into one central stop."
+            }
+        },
+        {
             "x": 3150,
             "y": 620,
             "radius": 250,
             "popup": {
-                "name": "cctc",
-                "title": "Central Campus Transit Center",
-                "description": "This building is next to the main campus bus stop, so people often refer to it when taking the bus. It has many rooms inside, including labs and research centers."
+                "name": "nub",
+                "title": "North University Building",
+                "description": "Formerly the C.C. Little, this building has many rooms inside, including labs and research centers."
+            }
+        },
+        {
+            "x": 3350,
+            "y": 1550,
+            "radius": 250,
+            "popup": {
+                "name": "weiser",
+                "title": "Weiser Hall",
+                "description": "The building is home to a number of interdisciplinary and internationally-focused units within the College of Literature, Science, and the Arts, and is a center for active and engaged learning. Formerly the Dennison Building, Weiser Hall was renamed in 2014 in recognition of U-M alumni and donors Ronald and Eileen Weiser."
+            }
+        },
+        {
+            "x": 3260,
+            "y": 2200,
+            "radius": 250,
+            "popup": {
+                "name": "easthall",
+                "title": "East Hall",
+                "description": "East Hall is home to the Psychology and Math departments. If you have to go to office hours for these classes, they will likely be held here! It is also home to the Math library/lounge with books about Pi!"
+            }
+        },
+        {
+            "x": 3260,
+            "y": 2550,
+            "radius": 250,
+            "popup": {
+                "name": "joep",
+                "title": "Joe's Pizza",
+                "description": "This is a new pizzeria on campus that is known for its HUGE slices! The lines tend to get long on game days, so plan your trip to Joe's accordingly! But it's a must try on campus!"
+            }
+        },
+        {
+            "x": 1509,
+            "y": 1165,
+            "radius": 250,
+            "popup": {
+                "name": "m",
+                "title": "Diag M",
+                "description": "Don't step on the \"M\"! It's said if you walk on this brass\"M\" before your first exam, you'll fail the exam. The fraternity Theta Xi guards the \"M\" the whole week before the yearly game versus MSU to protect it against vandalism."
             }
         }
     ],

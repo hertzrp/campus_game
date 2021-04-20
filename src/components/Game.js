@@ -1,16 +1,17 @@
-import './Game.css'
+import './Game.css';
 import React from 'react';
-import Building from './Building'
-import ProgressBar from './ProgressBar'
-import Player from './Player'
+import Building from './Building';
+import ProgressBar from './ProgressBar';
+import Player from './Player';
 import Interaction from './Interaction';
 import Location from './Location';
-import Settings from './Settings';
+import Panel from './Panel';
 import Splash from './Splash';
 import End from './EndScreen'
-import scene_diag from '../scenes/diag.json'
-import scene_north from '../scenes/north.json'
 import BusStop from './BusStop';
+import SoundManager from './SoundManager';
+import scene_diag from '../scenes/diag.json';
+import scene_north from '../scenes/north.json';
 
 
 class Game extends React.Component {
@@ -33,9 +34,11 @@ class Game extends React.Component {
             busStop: {},
             visited: {},
             keys: [],
+            volume: 0.1,
             screen: "splash",
-            button: "Start Game",
-            completed: false
+            button: "Start Experience",
+            completed: false,
+            waiting: false
         }
 
         this.updateCameraPosition = this.updateCameraPosition.bind(this);
@@ -49,24 +52,24 @@ class Game extends React.Component {
         let xMove = 0;
         let yMove = 0;
 
-        if (this.state.keys["ArrowLeft"]) {
-            if (player.x > 0 + player.width/2){
+        if (this.state.keys["ArrowLeft"] || this.state.keys["a"]) {
+            if (player.x > -60 + player.width/2){
                 xMove = -1;
             }
         } 
-        else if (this.state.keys["ArrowRight"]) {
-            if (player.x < 3700 - player.width/2){
+        else if (this.state.keys["ArrowRight"] || this.state.keys["d"]) {
+            if (player.x < this.state.map.width - player.width/2){
                 xMove = 1;
             }
         }
 
-        if (this.state.keys["ArrowUp"]) {
-            if (player.y > 0 + player.height/2){
+        if (this.state.keys["ArrowUp"] || this.state.keys["w"]) {
+            if (player.y > -40 + player.height/2){
                 yMove = -1;
             }
         } 
-        else if (this.state.keys["ArrowDown"]) {
-            if (player.y < 2950 - player.height/2){
+        else if (this.state.keys["ArrowDown"] || this.state.keys["s"]) {
+            if (player.y < this.state.map.height - player.height/2){
                 yMove = 1;
             }
         }
@@ -142,6 +145,12 @@ class Game extends React.Component {
 
     enableMovement=()=> {
         this.popup = false;
+        if(this.state.completed && !this.state.waiting){
+            this.setState({
+                screen: "end",
+                waiting: true
+            });
+        }
     }
 
     loadMapE = (e) => {
@@ -188,6 +197,12 @@ class Game extends React.Component {
 
         // Load the map
         this.loadMap("diag");
+        let newPlayer = { ...this.state.player };
+
+        newPlayer.x = 1500;
+        newPlayer.y = 900;
+
+        this.setState({ player: newPlayer });
 
         // Start the player movement loop
         window.requestAnimationFrame(this.updatePlayer);
@@ -234,13 +249,10 @@ class Game extends React.Component {
     }
 
     endGame = () => {
-        console.log("hello");
         if(!this.state.completed){
             this.setState({
-                screen: "end",
                 completed: true
             });
-
         }
     }
 
@@ -250,6 +262,14 @@ class Game extends React.Component {
         newVisited[name] = true;
 
         this.setState({ visited: newVisited });
+    }
+
+    changeSettings = (e) => {
+        let newVolume = e.target.value;
+
+        this.setState({ volume: newVolume });
+
+        console.log(this.state.volume);
     }
 
     render() {
@@ -272,7 +292,10 @@ class Game extends React.Component {
             return <Splash state={this.state} startGame={this.startGame}></Splash>;
         }
         else if(this.state.screen === "end"){
-            return <End startGame={this.startGame}></End>;
+            return <div>
+                <End startGame={this.startGame}></End>
+                <SoundManager volume={this.state.volume} screen={this.state.screen} map={this.state.map}></SoundManager>
+            </div>;
         }
         else{
             return <div id="game">
@@ -290,9 +313,20 @@ class Game extends React.Component {
 
                     <div id="ui">
                         <Location map={this.state.map}></Location>
-                        <ProgressBar endGame={this.endGame}visited={this.state.visited} totalInteractions={this.state.totalInteractions}></ProgressBar>
-                        <Settings startGame={this.startGame}></Settings>
+                        <ProgressBar
+                            endGame={this.endGame}
+                            visited={this.state.visited}
+                            totalInteractions={this.state.totalInteractions}></ProgressBar>
+                        <Panel
+                            startGame={this.startGame}
+                            interactions={this.state.interactions}
+                            visited={this.state.visited}
+                            map={this.state.map}
+                            volume={this.state.volume}
+                            changeSettings={this.changeSettings}></Panel>
                     </div>
+
+                    <SoundManager volume={this.state.volume} screen={this.state.screen} map={this.state.map}></SoundManager>
                 </div>;
         }
     }

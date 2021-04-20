@@ -23,6 +23,7 @@ class ProgressBar extends React.Component {
           year = "Junior"
         } else if(percent === 100){
           this.props.endGame();
+          year = "Alumni"
         }
         else{
           year = "Senior"

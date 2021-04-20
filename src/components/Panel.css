@@ -1,0 +1,95 @@
+.panel {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    text-align: right;
+}
+
+.panel > * {
+    text-align: left;
+    position: relative;
+    right: 0;
+}
+
+.panel > button {
+    padding: 1em 1.2em;
+    margin-left: 0.8em;
+    width: 50px;
+    text-align: center;
+}
+
+.panel-card {
+    padding: 1em 2em;
+    margin-top: 1em;
+    font-size: 90%;
+}
+
+.tasklist {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.tasklist::-webkit-scrollbar { 
+    width: 10px;
+}
+
+/* Track */
+.tasklist::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    margin: 1em;
+}
+   
+/* Handle */
+.tasklist::-webkit-scrollbar-thumb {
+background: #888; 
+}
+
+/* Handle on hover */
+.tasklist::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+
+.tasklist h2 {
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    color: darkgray;
+    font-size: 12pt;
+    margin: 0;
+}
+
+.tasklist span {
+    color: darkgray;
+    font-size: 60%;
+}
+
+.tasklist .icon {
+    margin-right: .5em;
+    font-size: 120%;
+}
+
+.tasklist .checked {
+    color: green;
+}
+
+.settings-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    padding: 1em 2em;
+    z-index: 5;
+}
+
+.settings-popup button {
+    float: right;
+}
+
+.settings-popup .value {
+    float: right;
+}
+
+.help-card {
+    max-width: 400px;
+}
